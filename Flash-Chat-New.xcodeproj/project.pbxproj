@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A05C00B255870860044D313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A05C00A255870860044D313 /* AppDelegate.swift */; };
 		7A05C00D255870860044D313 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A05C00C255870860044D313 /* SceneDelegate.swift */; };
-		7A05C00F255870860044D313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A05C00E255870860044D313 /* ViewController.swift */; };
+		7A05C00F255870860044D313 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A05C00E255870860044D313 /* WelcomeViewController.swift */; };
 		7A05C012255870860044D313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A05C010255870860044D313 /* Main.storyboard */; };
 		7A05C014255870880044D313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A05C013255870880044D313 /* Assets.xcassets */; };
 		7A05C017255870880044D313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A05C015255870880044D313 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		7A05C007255870860044D313 /* Flash-Chat-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash-Chat-New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A05C00A255870860044D313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A05C00C255870860044D313 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7A05C00E255870860044D313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A05C00E255870860044D313 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		7A05C011255870860044D313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A05C013255870880044D313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A05C016255870880044D313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,13 +58,37 @@
 			children = (
 				7A05C00A255870860044D313 /* AppDelegate.swift */,
 				7A05C00C255870860044D313 /* SceneDelegate.swift */,
-				7A05C00E255870860044D313 /* ViewController.swift */,
-				7A05C010255870860044D313 /* Main.storyboard */,
+				7A05C022255870A20044D313 /* Models */,
+				7A05C0212558709D0044D313 /* Views */,
+				7A05C01F255870940044D313 /* Controllers */,
 				7A05C013255870880044D313 /* Assets.xcassets */,
 				7A05C015255870880044D313 /* LaunchScreen.storyboard */,
 				7A05C018255870880044D313 /* Info.plist */,
 			);
 			path = "Flash-Chat-New";
+			sourceTree = "<group>";
+		};
+		7A05C01F255870940044D313 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A05C00E255870860044D313 /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A05C0212558709D0044D313 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A05C010255870860044D313 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A05C022255870A20044D313 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A05C00F255870860044D313 /* ViewController.swift in Sources */,
+				7A05C00F255870860044D313 /* WelcomeViewController.swift in Sources */,
 				7A05C00B255870860044D313 /* AppDelegate.swift in Sources */,
 				7A05C00D255870860044D313 /* SceneDelegate.swift in Sources */,
 			);
