@@ -66,6 +66,7 @@
                     <connections>
                         <outlet property="loginButton" destination="nzL-FM-07U" id="vRr-jK-5fP"/>
                         <outlet property="registerButton" destination="e9l-JX-904" id="mdQ-YP-4Bw"/>
+                        <outlet property="titleLabel" destination="vHt-Rb-vFp" id="i2f-tL-CXv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -250,6 +251,9 @@
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" backgroundImage="arrowshape.turn.up.right.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="sendPressed:" destination="xJ5-uH-Vdy" eventType="touchUpInside" id="z2j-0l-B8A"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -280,8 +284,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="FlashChat " id="XfD-Wj-cD9">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="ijK-m4-3og"/>
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="ijK-m4-3og">
+                            <connections>
+                                <action selector="logoutPressed:" destination="xJ5-uH-Vdy" id="BjZ-JL-YBq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="messageTextField" destination="FJJ-Vt-R3t" id="Qe0-I7-3b8"/>
+                        <outlet property="tableView" destination="Sbt-6d-jOm" id="9wg-ET-ueZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJR-ev-INZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
