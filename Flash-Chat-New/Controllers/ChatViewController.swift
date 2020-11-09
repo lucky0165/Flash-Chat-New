@@ -51,7 +51,9 @@ class ChatViewController: UIViewController {
     
     func loadData() {
         
-        db.collection(K.FStore.collectionName).getDocuments { (querySnapshot, error) in
+        db.collection(K.FStore.collectionName)
+            .order(by: K.FStore.dateField)
+            .addSnapshotListener { (querySnapshot, error) in
             
             self.messages = []
             
@@ -67,6 +69,9 @@ class ChatViewController: UIViewController {
                             DispatchQueue.main.async {
                                 self.messages.append(newMessage)
                                 self.tableView.reloadData()
+                                
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }
                         }
                     }
@@ -109,6 +114,18 @@ extension ChatViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
         
         cell.label.text = messages[indexPath.row].body
+        
+        let message = messages[indexPath.row]
+        
+        if message.sender == Auth.auth().currentUser?.email {
+            cell.leftImageView.isHidden = true
+            cell.rightImageView.isHidden = false
+            cell.messageBubble.backgroundColor = #colorLiteral(red: 0.7417076826, green: 0.415786922, blue: 0.9570215344, alpha: 1)
+        } else {
+            cell.leftImageView.isHidden = false
+            cell.rightImageView.isHidden = true
+            cell.messageBubble.backgroundColor = #colorLiteral(red: 0.1203979626, green: 0.8818505406, blue: 0.7688116431, alpha: 1)
+        }
         
         return cell
     }
