@@ -257,7 +257,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.12039796262979507" green="0.88185054063796997" blue="0.76881164312362671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <constraints>
                                     <constraint firstItem="sCk-QL-RPy" firstAttribute="top" secondItem="yK4-db-5wZ" secondAttribute="top" constant="20" id="1dM-Me-NAE"/>
                                     <constraint firstAttribute="bottom" secondItem="sCk-QL-RPy" secondAttribute="bottom" constant="40" id="EnN-Sj-Kni"/>

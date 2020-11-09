@@ -13,7 +13,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
-    let appName = "FlashChat "
+    let appName = K.appName
     
     override func viewDidLoad() {
         super.viewDidLoad()

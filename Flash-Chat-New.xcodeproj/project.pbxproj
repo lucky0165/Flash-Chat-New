@@ -19,6 +19,9 @@
 		7A05C02B255876980044D313 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A05C02A255876980044D313 /* ChatViewController.swift */; };
 		7A2E061A2559078A0060D6DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E06192559078A0060D6DF /* GoogleService-Info.plist */; };
 		7A2E064025590DA70060D6DF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E063F25590DA70060D6DF /* Message.swift */; };
+		7A2E064425590E330060D6DF /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E064225590E330060D6DF /* MessageCell.swift */; };
+		7A2E064525590E330060D6DF /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E064325590E330060D6DF /* MessageCell.xib */; };
+		7A2E06482559AAA80060D6DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E06472559AAA80060D6DF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		7A05C02A255876980044D313 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		7A2E06192559078A0060D6DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A2E063F25590DA70060D6DF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7A2E064225590E330060D6DF /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		7A2E064325590E330060D6DF /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		7A2E06472559AAA80060D6DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DEDA69E79E0A0C747B84ADC5 /* Pods-Flash-Chat-New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash-Chat-New.debug.xcconfig"; path = "Target Support Files/Pods-Flash-Chat-New/Pods-Flash-Chat-New.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +88,7 @@
 				7A05C015255870880044D313 /* LaunchScreen.storyboard */,
 				7A05C018255870880044D313 /* Info.plist */,
 				7A2E06192559078A0060D6DF /* GoogleService-Info.plist */,
+				7A2E06472559AAA80060D6DF /* Constants.swift */,
 			);
 			path = "Flash-Chat-New";
 			sourceTree = "<group>";
@@ -101,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				7A05C010255870860044D313 /* Main.storyboard */,
+				7A2E064225590E330060D6DF /* MessageCell.swift */,
+				7A2E064325590E330060D6DF /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2E064525590E330060D6DF /* MessageCell.xib in Resources */,
 				7A05C017255870880044D313 /* LaunchScreen.storyboard in Resources */,
 				7A2E061A2559078A0060D6DF /* GoogleService-Info.plist in Resources */,
 				7A05C014255870880044D313 /* Assets.xcassets in Resources */,
@@ -246,12 +256,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A05C00F255870860044D313 /* WelcomeViewController.swift in Sources */,
+				7A2E064425590E330060D6DF /* MessageCell.swift in Sources */,
 				7A05C00B255870860044D313 /* AppDelegate.swift in Sources */,
 				7A05C00D255870860044D313 /* SceneDelegate.swift in Sources */,
 				7A05C0282558768F0044D313 /* LoginViewController.swift in Sources */,
 				7A05C02B255876980044D313 /* ChatViewController.swift in Sources */,
 				7A05C025255876830044D313 /* RegisterViewController.swift in Sources */,
 				7A2E064025590DA70060D6DF /* Message.swift in Sources */,
+				7A2E06482559AAA80060D6DF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
